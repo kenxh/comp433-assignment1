@@ -16,10 +16,7 @@ import android.widget.ImageView;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Date;
-import java.util.List;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
@@ -82,8 +79,6 @@ public class MainActivity extends AppCompatActivity {
                 if (imageDirIndex > 2) {
                     image = BitmapFactory.decodeFile(imageDir.listFiles()[imageDirIndex - 3].getPath());
                     imageView4.setImageBitmap(image);
-                    System.out.println("SHOW LATEST 3");
-                    System.out.println(imageDir.listFiles()[imageDirIndex - 3].getPath());
                 }
             }
         }
